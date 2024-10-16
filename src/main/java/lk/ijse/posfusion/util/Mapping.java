@@ -1,7 +1,9 @@
 package lk.ijse.posfusion.util;
 
 import lk.ijse.posfusion.dto.impl.CustomerDTO;
+import lk.ijse.posfusion.dto.impl.ItemDTO;
 import lk.ijse.posfusion.entity.CustomerEntity;
+import lk.ijse.posfusion.entity.ItemEntity;
 import org.modelmapper.ModelMapper;
 import org.modelmapper.TypeToken;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,6 +27,20 @@ public class Mapping {
 
     public List<CustomerDTO> convertCustomerToDTOList(List<CustomerEntity> customerEntities) {
         return modelMapper.map(customerEntities, new TypeToken<List<CustomerDTO>>() {
+        }.getType());
+    }
+
+    //Item matters mapping
+    public ItemEntity convertToItemEntity(ItemDTO itemDTO) {
+        return modelMapper.map(itemDTO, ItemEntity.class);
+    }
+
+    public ItemDTO convertToItemDTO(ItemEntity itemEntity) {
+        return modelMapper.map(itemEntity, ItemDTO.class);
+    }
+
+    public List<ItemDTO> convertItemToDTOList(List<ItemEntity> itemEntities) {
+        return modelMapper.map(itemEntities, new TypeToken<List<ItemDTO>>() {
         }.getType());
     }
 }
