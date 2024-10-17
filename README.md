@@ -66,11 +66,14 @@ To run this project, ensure you have the following installed:
 <div align="center">
 <a href="https://github.com/yasith-chathuranga" target="_blank"><img src = "https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a>
 <a href="https://git-scm.com/" target="_blank"><img src = "https://img.shields.io/badge/Git-100000?style=for-the-badge&logo=git&logoColor=white"></a>
-<a href="https://html.com/html5/" target="_blank"><img src = "https://img.shields.io/badge/HTML5-100000?style=for-the-badge&logo=HTML5&logoColor=white"></a>
-<a href="https://css3.com/" target="_blank"><img src = "https://img.shields.io/badge/CSS3-100000?style=for-the-badge&logo=CSS3&logoColor=white"></a>
-<a href="https://www.javascript.com/" target="_blank"><img src = "https://img.shields.io/badge/JavaScript-100000?style=for-the-badge&logo=JavaScript&logoColor=white"></a>
-<a href="https://jdk.java.net/java-se-ri/17-MR1" target="_blank"><img src = "https://img.shields.io/badge/Java-100000?style=for-the-badge&logo=openjdk&logoColor=white"></a>
-<a href="https://linuxmint.com/download_all.php" target="_blank"><img src = "https://img.shields.io/badge/Linux_Mint-100000?style=for-the-badge&logo=linux-mint&logoColor=white"></a>
+<a href="https://spring.io/projects/spring-framework" target="_blank"><img src = "https://img.shields.io/badge/Spring_Framework-100000?style=for-the-badge&logo=spring&logoColor=white"></a>
+<a href="https://spring.io/projects/spring-data-jpa" target="_blank"><img src = "https://img.shields.io/badge/Spring_Data_JPA-100000?style=for-the-badge&logo=spring&logoColor=white"></a>
+<a href="https://hibernate.org/orm/" target="_blank"><img src = "https://img.shields.io/badge/Hibernate-100000?style=for-the-badge&logo=Hibernate&logoColor=white"></a>
+<a href="https://tomcat.apache.org/" target="_blank"><img src = "https://img.shields.io/badge/Tomcat-100000?style=for-the-badge&logo=apachetomcat&logoColor=white"></a>
+<a href="https://logback.qos.ch/documentation.html" target="_blank"><img src = "https://img.shields.io/badge/Logback-100000?style=for-the-badge&logo=ko-fi&logoColor=white"></a>
+<a href="https://maven.apache.org/download.cgi" target="_blank"><img src = "https://img.shields.io/badge/Maven-100000?style=for-the-badge&logo=apachemaven&logoColor=white"></a>
+<a href="https://www.mysql.com/downloads/" target="_blank"><img src = "https://img.shields.io/badge/Mysql-100000?style=for-the-badge&logo=mysql&logoColor=white"></a>
+<a href="https://www.postman.com/downloads/" target="_blank"><img src = "https://img.shields.io/badge/Postman-100000?style=for-the-badge&logo=Postman&logoColor=white"></a>
 </div> <br>
 <p align="center">
   &copy; 2024 Yasith Chathuranga
