@@ -12,6 +12,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Data
 public class OrderDetailDTO implements SuperDTO {
+    @NotBlank(message = "Order ID can't be blank")
     private String orderId;
     @Min(value = 1, message = "Quantity must be at least one;")
     private int quantity;

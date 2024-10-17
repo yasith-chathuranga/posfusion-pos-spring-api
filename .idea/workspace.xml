@@ -9,12 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2268cbec-2342-43c2-89d3-0d54cec3fece" name="Changes" comment="order &amp; order detail implementation done">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/posfusion/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/posfusion/controller/CustomerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/posfusion/controller/HealthTestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/posfusion/controller/HealthTestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/posfusion/controller/ItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/posfusion/controller/ItemController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/posfusion/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/posfusion/controller/OrderController.java" afterDir="false" />
+    <list default="true" id="2268cbec-2342-43c2-89d3-0d54cec3fece" name="Changes" comment="loggers attached">
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/posfusion/dto/impl/CustomerDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/posfusion/dto/impl/CustomerDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/posfusion/dto/impl/ItemDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/posfusion/dto/impl/ItemDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/posfusion/dto/impl/OrderDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/posfusion/dto/impl/OrderDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/posfusion/dto/impl/OrderDetailDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/posfusion/dto/impl/OrderDetailDTO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,7 +177,7 @@
       <updated>1729066503526</updated>
       <workItem from="1729066504647" duration="2713000" />
       <workItem from="1729069907161" duration="3160000" />
-      <workItem from="1729130054622" duration="17934000" />
+      <workItem from="1729130054622" duration="19449000" />
     </task>
     <task id="LOCAL-00001" summary="repository layer refactor done">
       <option name="closed" value="true" />
@@ -196,7 +195,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729147298793</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="loggers attached">
+      <option name="closed" value="true" />
+      <created>1729148818242</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1729148818242</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -205,6 +212,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="repository layer refactor done" />
     <MESSAGE value="order &amp; order detail implementation done" />
-    <option name="LAST_COMMIT_MESSAGE" value="order &amp; order detail implementation done" />
+    <MESSAGE value="loggers attached" />
+    <option name="LAST_COMMIT_MESSAGE" value="loggers attached" />
   </component>
 </project>
