@@ -29,7 +29,7 @@ Logging is configured using Logback. Logs are written to both the console and a 
 
 ## Postman Documentation
 
-For detailed API documentation and testing, please refer to the [Postman Documentation](https://documenter.getpostman.com/view/37565373/2sAXxV6pte).
+For detailed API documentation and testing, please refer to the [Postman API Documentation](https://documenter.getpostman.com/view/37565373/2sAXxV6pte).
 
 ## License
 
