@@ -9,22 +9,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2268cbec-2342-43c2-89d3-0d54cec3fece" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/posfusion/customObj/CustomerErrorResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/posfusion/customObj/impl/CustomerErrorResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/posfusion/customObj/ItemErrorResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/posfusion/customObj/impl/ItemErrorResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/posfusion/dao/CustomerDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/posfusion/repository/CustomerRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/posfusion/dao/ItemDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/posfusion/repository/ItemRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/posfusion/entity/CustomerEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/posfusion/entity/impl/CustomerEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/posfusion/entity/ItemEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/posfusion/entity/impl/ItemEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/posfusion/service/CustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/posfusion/service/impl/CustomerServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/posfusion/service/ItemServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/posfusion/service/impl/ItemServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/posfusion/util/Mapping.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/posfusion/util/Mapping.java" afterDir="false" />
+    <list default="true" id="2268cbec-2342-43c2-89d3-0d54cec3fece" name="Changes" comment="order &amp; order detail implementation done">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/posfusion/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/posfusion/controller/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/posfusion/controller/HealthTestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/posfusion/controller/HealthTestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/posfusion/controller/ItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/posfusion/controller/ItemController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/posfusion/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/posfusion/controller/OrderController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -188,11 +178,33 @@
       <updated>1729066503526</updated>
       <workItem from="1729066504647" duration="2713000" />
       <workItem from="1729069907161" duration="3160000" />
-      <workItem from="1729130054622" duration="15712000" />
+      <workItem from="1729130054622" duration="17934000" />
     </task>
+    <task id="LOCAL-00001" summary="repository layer refactor done">
+      <option name="closed" value="true" />
+      <created>1729147150989</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1729147150989</updated>
+    </task>
+    <task id="LOCAL-00002" summary="order &amp; order detail implementation done">
+      <option name="closed" value="true" />
+      <created>1729147298793</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1729147298793</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="repository layer refactor done" />
+    <MESSAGE value="order &amp; order detail implementation done" />
+    <option name="LAST_COMMIT_MESSAGE" value="order &amp; order detail implementation done" />
   </component>
 </project>
