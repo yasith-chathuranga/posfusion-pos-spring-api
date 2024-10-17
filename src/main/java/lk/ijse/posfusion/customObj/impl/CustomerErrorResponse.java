@@ -1,5 +1,6 @@
-package lk.ijse.posfusion.customObj;
+package lk.ijse.posfusion.customObj.impl;
 
+import lk.ijse.posfusion.customObj.CustomerResponse;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

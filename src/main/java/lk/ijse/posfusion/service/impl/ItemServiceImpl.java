@@ -1,12 +1,13 @@
-package lk.ijse.posfusion.service;
+package lk.ijse.posfusion.service.impl;
 
-import lk.ijse.posfusion.customObj.ItemErrorResponse;
+import lk.ijse.posfusion.customObj.impl.ItemErrorResponse;
 import lk.ijse.posfusion.customObj.ItemResponse;
-import lk.ijse.posfusion.dao.ItemDao;
+import lk.ijse.posfusion.repository.ItemRepository;
 import lk.ijse.posfusion.dto.impl.ItemDTO;
-import lk.ijse.posfusion.entity.ItemEntity;
+import lk.ijse.posfusion.entity.impl.ItemEntity;
 import lk.ijse.posfusion.exception.DataPersistFailedException;
 import lk.ijse.posfusion.exception.ItemNotFoundException;
+import lk.ijse.posfusion.service.ItemService;
 import lk.ijse.posfusion.util.Mapping;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -17,15 +18,15 @@ import java.util.Optional;
 
 @Service
 @Transactional
-public class ItemServiceImpl implements ItemService{
+public class ItemServiceImpl implements ItemService {
     @Autowired
-    private ItemDao itemDao;
+    private ItemRepository itemRepository;
 
     @Autowired
     private Mapping mapping;
     @Override
     public void saveItem(ItemDTO itemDTO) {
-        ItemEntity savedItem = itemDao.save(mapping.convertToItemEntity(itemDTO));
+        ItemEntity savedItem = itemRepository.save(mapping.convertToItemEntity(itemDTO));
         if(savedItem == null) {
             throw new DataPersistFailedException("Cannot data saved");
         }
@@ -33,7 +34,7 @@ public class ItemServiceImpl implements ItemService{
 
     @Override
     public void updateItem(String id, ItemDTO incomeItemDTO) {
-        Optional<ItemEntity> tmpItemEntity = itemDao.findById(id);
+        Optional<ItemEntity> tmpItemEntity = itemRepository.findById(id);
         if (!tmpItemEntity.isPresent()){
             throw new ItemNotFoundException("Item not found");
         }else {
@@ -45,18 +46,18 @@ public class ItemServiceImpl implements ItemService{
 
     @Override
     public void deleteItem(String id) {
-        Optional<ItemEntity> findId = itemDao.findById(id);
+        Optional<ItemEntity> findId = itemRepository.findById(id);
         if (!findId.isPresent()){
             throw new ItemNotFoundException("Item not found");
         }else {
-            itemDao.deleteById(id);
+            itemRepository.deleteById(id);
         }
     }
 
     @Override
     public ItemResponse getSelectedItem(String id) {
-        if (itemDao.existsById(id)){
-            return mapping.convertToItemDTO(itemDao.getReferenceById(id));
+        if (itemRepository.existsById(id)){
+            return mapping.convertToItemDTO(itemRepository.getReferenceById(id));
         }else {
             return new ItemErrorResponse(0,"Item not found");
         }
@@ -64,6 +65,6 @@ public class ItemServiceImpl implements ItemService{
 
     @Override
     public List<ItemDTO> getAllItems() {
-        return mapping.convertItemToDTOList(itemDao.findAll());
+        return mapping.convertItemToDTOList(itemRepository.findAll());
     }
 }
