@@ -1,16 +1,20 @@
-package lk.ijse.posfusion.entity;
+package lk.ijse.posfusion.entity.impl;
 
 import jakarta.persistence.*;
+import lk.ijse.posfusion.entity.SuperEntity;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
 @Table(name = "customer")
 @Entity
-public class CustomerEntity implements SuperEntity{
+public class CustomerEntity implements SuperEntity {
     @Id
     @Column(unique = true, nullable = false)
     private String id;
@@ -20,4 +24,6 @@ public class CustomerEntity implements SuperEntity{
     private String address;
     @Column(nullable = false)
     private double salary;
+    @OneToMany(mappedBy = "customer")
+    private List<OrderEntity> orders = new ArrayList<>();
 }

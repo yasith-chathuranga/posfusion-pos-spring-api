@@ -2,8 +2,12 @@ package lk.ijse.posfusion.util;
 
 import lk.ijse.posfusion.dto.impl.CustomerDTO;
 import lk.ijse.posfusion.dto.impl.ItemDTO;
-import lk.ijse.posfusion.entity.CustomerEntity;
-import lk.ijse.posfusion.entity.ItemEntity;
+import lk.ijse.posfusion.dto.impl.OrderDTO;
+import lk.ijse.posfusion.dto.impl.OrderDetailDTO;
+import lk.ijse.posfusion.entity.impl.CustomerEntity;
+import lk.ijse.posfusion.entity.impl.ItemEntity;
+import lk.ijse.posfusion.entity.impl.OrderDetailsEntity;
+import lk.ijse.posfusion.entity.impl.OrderEntity;
 import org.modelmapper.ModelMapper;
 import org.modelmapper.TypeToken;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -43,4 +47,19 @@ public class Mapping {
         return modelMapper.map(itemEntities, new TypeToken<List<ItemDTO>>() {
         }.getType());
     }
+
+    //Order matters mapping
+    public OrderEntity convertToOrderEntity(OrderDTO orderDTO) {
+        return modelMapper.map(orderDTO, OrderEntity.class);
+    }
+
+    public List<OrderDTO> convertToOrderDTO(List<OrderEntity> orderEntityList) {return modelMapper.map(orderEntityList, new TypeToken<List<OrderDTO>>() {}.getType());}
+
+    public List<OrderDTO> convertOrderToDTOList(List<OrderEntity> orderEntities) {
+        return modelMapper.map(orderEntities, new TypeToken<List<ItemDTO>>() {
+        }.getType());
+    }
+
+    //matters of OrderDetailEntity and DTO
+    public OrderDetailsEntity convertToOrderDetailEntity(OrderDetailDTO orderDetailDTO) {return modelMapper.map(orderDetailDTO, OrderDetailsEntity.class);}
 }
